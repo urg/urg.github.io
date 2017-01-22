@@ -1,0 +1,39 @@
+    <div class="profile-container">
+        <h1 class="name">Patrick McAndrew</h1>
+            <p>
+            <i class="fa fa-map-marker"></i> London SE15
+            </p>
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                   
+                   {% if site.email %}
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
+                    {% else %}
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:alan.doe@website.com">alan.doe@website.com</a></li>
+                    {% endif %}
+                    
+                    {% if site.phone %}
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
+                    {% endif %}
+                                        
+                    {% if site.linkedin %}
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+                    {% else %}
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/sharath-kumar-87669956" target="_blank">linkedin.com/in/sharathdt</a></li>
+                    {% endif %}
+                    
+                    {% if site.github %}
+                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
+                    {% else %}
+                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/sharu725" target="_blank">github.com/sharu725</a></li>
+                    {% endif %}
+                    
+                    {% if site.twitter %}
+                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.twitter}}" target="_blank">{{site.twitter}}</a></li>
+                    {% else %}
+                     <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@webjeda" target="_blank">@webjeda</a></li>
+                    {% endif %}
+                    
+                </ul>
+            </div><!--//contact-container-->
+    </div><!--//profile-container-->
