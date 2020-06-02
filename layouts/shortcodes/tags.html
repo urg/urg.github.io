@@ -1,0 +1,5 @@
+<div class="columns is-centered container">
+    {{ range (.Page.GetTerms "tags") }}
+        <a class="button is-size-5 has-background-primary" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+   {{ end }}
+</div>
