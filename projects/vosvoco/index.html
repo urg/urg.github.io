@@ -2,9 +2,9 @@
 <html lang="en-us">
   <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://urg.name/projects/peerj/" />
-    <meta property="og:type" content="article" /><meta property="og:title" content="PeerJ" /><meta property="og:description" content="Helping to create a marketplace leader" /><meta property="og:image:width"  content="600" />
-        <meta property="og:image:height" content="300" /><meta property="og:image" content="https://urg.name/projects/peerj/images/peerj_hu49527e34e2306a770c6564baff35b2d7_3167219_600x0_resize_box_2.png" /><title>Patrick McAndrew - Portfolio website - PeerJ</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://urg.name/projects/vosvoco/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Vos Voco" /><meta property="og:description" content="Modernisation, Testing, &amp; Maintenance" /><meta property="og:image:width"  content="600" />
+        <meta property="og:image:height" content="288" /><meta property="og:image" content="https://urg.name/projects/vosvoco/images/vosvoco_huca3b559cbc4c29bfde68e8e09c553123_855111_600x0_resize_box_2.png" /><title>Patrick McAndrew - Portfolio website - Vos Voco</title>
 
     
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
@@ -123,83 +123,57 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title">PeerJ</h1>
+        <h1 class="title is-2 section-title">Vos Voco</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div>
         
         <section class="section content has-text-justified">
-          <img src="images/peerj.png" />
+          <img src="images/vosvoco.png" />
 
 <h2 id="key-technologies">Key Technologies:</h2>
 <div class="columns is-centered container">
     
         <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/aws/">AWS</a>
    
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/ansible/">Ansible</a>
+        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/docker/">Docker</a>
    
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/aurora/">Aurora</a>
+        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/fargate/">Fargate</a>
    
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/elasticsearch/">Elasticsearch</a>
+        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/ruby/">Ruby</a>
    
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/graylog/">Graylog</a>
+        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/terraform/">Terraform</a>
    
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/hive/">Hive</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/mysql/">MySQL</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/php/">PHP</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/puppet/">Puppet</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/python/">Python</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/redis/">Redis</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/symfony/">Symfony</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/varnish/">Varnish</a>
+        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/vue.js/">Vue.js</a>
    
 </div>
 
 <h2 id="company-intro">Company Intro:</h2>
-<p><a href="https://peerj.com">PeerJ</a> is an award winning open access peer-reviewed journal with an innovative lifetime subscription model.</p>
+<p>Vos Voco provides an app based service to automate workflow processes.</p>
 <h2 id="team-composition--my-role">Team Composition &amp; My Role:</h2>
-<p>I was hired as a Senior Software Engineer and transitioned into a DevOps Lead. The technical team was quite small and consisted of the CEO, 1 senior dev and myself. Additionally, I hired 1 dev-ops engineer during my time at PeerJ.</p>
+<p>My role was as the sole full-stack developer to maintain, modernise, and enhance the website. There was an additional app developer who handled the app side of things.</p>
 <h2 id="project-details">Project Details:</h2>
-<p>I joined PeerJ when their initial MVP was still in development and helped them develop into the site they are today. Some of the notable projects I did while there are:</p>
-<h4 id="scaling-load-testing--high-availability">Scaling, Load Testing, &amp; High Availability</h4>
-<p>I setup &amp; configured varnish caching (including automating cache invalidation &amp; ip blacklisting). In combination with this, I created a JMeter load profile and ran load tests in a load environment to ensure optimal configuration of Apache, PHP, &amp; Varnish. Additionally, I setup a Jenkins built server and created the deploy process.  This work resulted in a 1 year uptime of 99.99% (less than 1 hour of downtime over the year).</p>
-<h4 id="accurate-page-level-analytics">Accurate Page Level Analytics</h4>
-<p>Initially, we used Google Analytics (GA) to publicly report on the individual page level metrics (Page Views, Pdf Downloads), however, we quickly notices issues with GA where the metrics were decreasing, or having large 1 off jumps (followed by a decrease back to original levels). I tried adding logic to prevent these situations from occurring, but it became apparent that even with those fixes, GA was not a viable long term solution. I created a EMR cluster and used Hadoop &amp; Hive to query the log files to be able to retrieve the same metrics. As part of this process, I created IP &amp; Bot exclusions to ensure the metrics were largely consistent with the previous data. Additionally, I architected the system so the cluster could be brought online for an hour or 2 each night to gather just the recent metrics for cost savings. This project was critical in maintaining trust in the PeerJ site by its community and resulted in no further complaints about page level metrics.</p>
-<h4 id="document-collaboration">Document collaboration</h4>
-<p>PeerJ decided on testing a new product to help academics collaborate together on documents. This system was initially based on file sharing and after investigation, I integrated Seafile into the PeerJ platform. Additionally, I made various changes to the api and adapted the QT application for branding. The product made it into an alpha release, but ultimately, customer demand for the product was not there and the project was ended.</p>
-<h4 id="migration-away-from-scalr">Migration away from Scalr</h4>
-<p>When I started with PeerJ, Scalr was used for many aspects of the PeerJ MVP. Due to time constraints, I continued along that path, using Scalr heavily for job orchestration, scaling servers based on load, deployment and database replication. However, due to both cost savings and occasional issues with their job orchestration engine, I decided to start a long term project to migrate away from Scalr. There were several parts to the project:</p>
+<p>I was tasked with maintaining the website. After analysing the current setup, I recommended and performed a modernisation program:</p>
+<ol>
+<li><strong>Containerise &amp; Deployment</strong>
+Initially the website was hosted on an ec2 instance with a manual deploy process. In order to develop locally and easily deploy, it made sense to containerise the application and move to a DevOps based deployment process.
 <ul>
-<li>Migration from MySQL to Aurora
-<ul>
-<li>I tasked the other dev-ops engineer with this project, which he completed with minimal downtime.</li>
+<li>Containerising the ruby api &amp; vue front-end app</li>
+<li>Migrating the existing EC2 based web application to be hosted via Fargate (Terraform based)</li>
+<li>Creating a AWS Code Pipeline to deploy the container with an ECR push trigger</li>
+<li>Create GitHub actions to build the container and push to ECR</li>
 </ul>
 </li>
-<li>Migration from Scalr Job Orchestration to a custom solution
+<li><strong>Automate testing</strong>
+There was an extensive manual test suite, however, this was quite time intensive to run and did not fit in will with a DevOps approach. As the website was quite involved, we agreed to create a baseline level of unit tests to ensure basic functionality before any feature changes were met, and then enhance testing around the feature functionality as new features were added.
 <ul>
-<li>I used a combination of several tools to achieve the same functionality we were used to. Cron was used to schedule the jobs on several servers. Cronlock was used to ensure the task only ran on 1 server. Graylog was used to be able to view the output of the job. <a href="https://github.com/so-sure/MEMon">MEMon</a> was created to monitor that the script ran and finally there was a custom python script wrapper to make it easy to tie all the tools together. This migration was successful and did not have any of the problems we encountered with Scalr of the occasional job not running.</li>
+<li>Setup initial unit tests</li>
+<li>Add the unit test execution to the GitHub actions and require passing before deployment</li>
 </ul>
 </li>
-<li>A new deploy process
-<ul>
-<li>Ansbile was chosen to be the tool for running the deployments. We had quite a complex deploy script in Scalr, however, between ansible and ansistrano, we were able to simplify the deploy script.</li>
-</ul>
-</li>
-<li>Using AWS Load Balancing
-<ul>
-<li>Scalr had it own ability to define metrics used for load balancing. Migration to using the AWS metrics was fairly simple, however, did involve testing in the load environment.</li>
-</ul>
-</li>
-</ul>
-<p>I left PeerJ before the entire migration was complete, however, the majority of the work had been complete and it was well on track to being a successful migration and had the potential to reduce costs by 20%.</p>
-<h4 id="document-generation">Document Generation</h4>
-<p>One of the core components of PeerJ is creating a review pdf that combines the main document with all of the supporting figures and images for the reviewers to perform the peer review. The systems has to handle documents in various formats and sizes and must work accurately. I was involved in making sure the system was robust and used a variety of open source tools and paid apis to perform the various resizing and conversations.</p>
+<li><strong>Upgrade Ruby &amp; Libraries</strong>
+Some of the libraries were old and needed updating. Once the baseline level of unit tests were created, this then gave some confidence to upgrade the old libraries.</li>
+<li><strong>Bug fixes / Feature enhancements</strong> There was a backlog of very minor bugs and some feature enhancement requests to do. TDD was used to recreate the bug or create test cases for the feature. In some cases, tests were created to determine existing functionality to then drive documentation.</li>
+</ol>
 
         </section>
       </div>

@@ -2,9 +2,7 @@
 <html lang="en-us">
   <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://urg.name/projects/peerj/" />
-    <meta property="og:type" content="article" /><meta property="og:title" content="PeerJ" /><meta property="og:description" content="Helping to create a marketplace leader" /><meta property="og:image:width"  content="600" />
-        <meta property="og:image:height" content="300" /><meta property="og:image" content="https://urg.name/projects/peerj/images/peerj_hu49527e34e2306a770c6564baff35b2d7_3167219_600x0_resize_box_2.png" /><title>Patrick McAndrew - Portfolio website - PeerJ</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><title>Patrick McAndrew - Portfolio website - Ruby</title>
 
     
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
@@ -120,93 +118,45 @@
     </div>
   </nav>
 <section class="section is-medium">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title">PeerJ</h1>
-        <h5 class="subtitle is-5 is-muted"></h5>
-        <div class="divider"></div>
+        <div class="container">
+          
+            
+              <h1 class="title section-title">Ruby</h1>
+              <h5 class="subtitle is-5 is-muted"></h5>
+              <div class="divider"></div>        
+              <div class="section is-small">
+                <div class="columns">
+                    <div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/projects/vosvoco/">
         
-        <section class="section content has-text-justified">
-          <img src="images/peerj.png" />
-
-<h2 id="key-technologies">Key Technologies:</h2>
-<div class="columns is-centered container">
-    
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/aws/">AWS</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/ansible/">Ansible</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/aurora/">Aurora</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/elasticsearch/">Elasticsearch</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/graylog/">Graylog</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/hive/">Hive</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/mysql/">MySQL</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/php/">PHP</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/puppet/">Puppet</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/python/">Python</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/redis/">Redis</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/symfony/">Symfony</a>
-   
-        <a class="button is-size-5 has-background-primary" href="https://urg.name/tags/varnish/">Varnish</a>
-   
-</div>
-
-<h2 id="company-intro">Company Intro:</h2>
-<p><a href="https://peerj.com">PeerJ</a> is an award winning open access peer-reviewed journal with an innovative lifetime subscription model.</p>
-<h2 id="team-composition--my-role">Team Composition &amp; My Role:</h2>
-<p>I was hired as a Senior Software Engineer and transitioned into a DevOps Lead. The technical team was quite small and consisted of the CEO, 1 senior dev and myself. Additionally, I hired 1 dev-ops engineer during my time at PeerJ.</p>
-<h2 id="project-details">Project Details:</h2>
-<p>I joined PeerJ when their initial MVP was still in development and helped them develop into the site they are today. Some of the notable projects I did while there are:</p>
-<h4 id="scaling-load-testing--high-availability">Scaling, Load Testing, &amp; High Availability</h4>
-<p>I setup &amp; configured varnish caching (including automating cache invalidation &amp; ip blacklisting). In combination with this, I created a JMeter load profile and ran load tests in a load environment to ensure optimal configuration of Apache, PHP, &amp; Varnish. Additionally, I setup a Jenkins built server and created the deploy process.  This work resulted in a 1 year uptime of 99.99% (less than 1 hour of downtime over the year).</p>
-<h4 id="accurate-page-level-analytics">Accurate Page Level Analytics</h4>
-<p>Initially, we used Google Analytics (GA) to publicly report on the individual page level metrics (Page Views, Pdf Downloads), however, we quickly notices issues with GA where the metrics were decreasing, or having large 1 off jumps (followed by a decrease back to original levels). I tried adding logic to prevent these situations from occurring, but it became apparent that even with those fixes, GA was not a viable long term solution. I created a EMR cluster and used Hadoop &amp; Hive to query the log files to be able to retrieve the same metrics. As part of this process, I created IP &amp; Bot exclusions to ensure the metrics were largely consistent with the previous data. Additionally, I architected the system so the cluster could be brought online for an hour or 2 each night to gather just the recent metrics for cost savings. This project was critical in maintaining trust in the PeerJ site by its community and resulted in no further complaints about page level metrics.</p>
-<h4 id="document-collaboration">Document collaboration</h4>
-<p>PeerJ decided on testing a new product to help academics collaborate together on documents. This system was initially based on file sharing and after investigation, I integrated Seafile into the PeerJ platform. Additionally, I made various changes to the api and adapted the QT application for branding. The product made it into an alpha release, but ultimately, customer demand for the product was not there and the project was ended.</p>
-<h4 id="migration-away-from-scalr">Migration away from Scalr</h4>
-<p>When I started with PeerJ, Scalr was used for many aspects of the PeerJ MVP. Due to time constraints, I continued along that path, using Scalr heavily for job orchestration, scaling servers based on load, deployment and database replication. However, due to both cost savings and occasional issues with their job orchestration engine, I decided to start a long term project to migrate away from Scalr. There were several parts to the project:</p>
-<ul>
-<li>Migration from MySQL to Aurora
-<ul>
-<li>I tasked the other dev-ops engineer with this project, which he completed with minimal downtime.</li>
-</ul>
-</li>
-<li>Migration from Scalr Job Orchestration to a custom solution
-<ul>
-<li>I used a combination of several tools to achieve the same functionality we were used to. Cron was used to schedule the jobs on several servers. Cronlock was used to ensure the task only ran on 1 server. Graylog was used to be able to view the output of the job. <a href="https://github.com/so-sure/MEMon">MEMon</a> was created to monitor that the script ran and finally there was a custom python script wrapper to make it easy to tie all the tools together. This migration was successful and did not have any of the problems we encountered with Scalr of the occasional job not running.</li>
-</ul>
-</li>
-<li>A new deploy process
-<ul>
-<li>Ansbile was chosen to be the tool for running the deployments. We had quite a complex deploy script in Scalr, however, between ansible and ansistrano, we were able to simplify the deploy script.</li>
-</ul>
-</li>
-<li>Using AWS Load Balancing
-<ul>
-<li>Scalr had it own ability to define metrics used for load balancing. Migration to using the AWS metrics was fairly simple, however, did involve testing in the load environment.</li>
-</ul>
-</li>
-</ul>
-<p>I left PeerJ before the entire migration was complete, however, the majority of the work had been complete and it was well on track to being a successful migration and had the potential to reduce costs by 20%.</p>
-<h4 id="document-generation">Document Generation</h4>
-<p>One of the core components of PeerJ is creating a review pdf that combines the main document with all of the supporting figures and images for the reviewers to perform the peer review. The systems has to handle documents in various formats and sizes and must work accurately. I was involved in making sure the system was robust and used a variety of open source tools and paid apis to perform the various resizing and conversations.</p>
-
-        </section>
+           
+           
+          
+            <img src="/projects/vosvoco/images/vosvoco_huca3b559cbc4c29bfde68e8e09c553123_855111_600x0_resize_box_2.png" style="height: auto; margin:auto" alt="">
+          
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Vos Voco
+      </h3>
+      <p class="refresh-summary">Modernisation, Testing, &amp; Maintenance</p> 
+      <div class="action has-text-right">
+        <a href="/projects/vosvoco/" class="button is-primary">
+                Read more
+            </a>
       </div>
     </div>
-  </div>  
-  </section>
-<footer class="footer footer-dark">
+  </div>
+
+                  </div>
+                
+              </div>
+            
+          
+        </div>
+    </section><footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
       <div class="column">
